@@ -24,7 +24,7 @@ jobs:
           path: ~/.cache/pip
           key: cache-a6c1d5c
 
-      - name: Prime cache-a6c1d5c
+      - name: prime cache-a6c1d5c
         run: |
           if [ "${{ steps.cache-deps.outputs.cache-hit }}" == "true" ]; then
             echo "Cache hit!"
